@@ -34,6 +34,7 @@ bool wav_destroy(sound_t* sound) {
     free(sound->samples);
     sound->samples = NULL;
     sound->sample_count = 0;
+    return true;
 }
 
 
